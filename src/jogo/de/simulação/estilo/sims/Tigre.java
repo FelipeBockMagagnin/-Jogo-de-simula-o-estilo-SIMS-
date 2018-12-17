@@ -9,6 +9,12 @@ package jogo.de.simulação.estilo.sims;
  *
  * @author Felpi
  */
-public class Tigre {
+public class Tigre extends Animal implements Terrestre{
+
+    @Override
+    public void anda(Posicao pos) {
+        System.out.println("Tigre andando de " + this.pos.x + "," + this.pos.y + "para " + pos.x + "," + pos.y);
+        this.pos = pos;
+    }
     
 }

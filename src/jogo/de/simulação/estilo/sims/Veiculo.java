@@ -5,10 +5,18 @@
  */
 package jogo.de.simulação.estilo.sims;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author Felpi
  */
-public class Veiculo {
+public abstract class Veiculo implements Movel{
+    protected Posicao pos;
     
+    ArrayList<String> registros = new ArrayList();
+    
+    void registra(Posicao origem, Posicao destino){
+        registros.add("Posição origem: " + origem + "Posição destino: " + destino);
+    }
 }

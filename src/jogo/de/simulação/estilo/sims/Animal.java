@@ -9,6 +9,8 @@ package jogo.de.simulação.estilo.sims;
  *
  * @author Felpi
  */
-public class Animal {
+public abstract class Animal implements Movel{
+    protected Posicao pos;
     
+    static int noAnimais = 0;
 }

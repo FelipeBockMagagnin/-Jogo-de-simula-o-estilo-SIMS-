@@ -9,6 +9,12 @@ package jogo.de.simulação.estilo.sims;
  *
  * @author Felpi
  */
-public class Barco {
+public class Barco extends Veiculo implements Aquatico{
+
+    @Override
+    public void nada(Posicao pos) {
+        System.out.println("Barco nadando de " + this.pos.x + "," + this.pos.y + "para " + pos.x + "," + pos.y);
+        this.pos = pos;
+    }
     
 }

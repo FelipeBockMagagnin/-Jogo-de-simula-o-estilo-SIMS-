@@ -10,5 +10,5 @@ package jogo.de.simulação.estilo.sims;
  * @author Felpi
  */
 public interface Terrestre {
-    
+    void anda(Posicao pos);
 }

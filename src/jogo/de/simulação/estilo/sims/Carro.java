@@ -9,6 +9,12 @@ package jogo.de.simulação.estilo.sims;
  *
  * @author Felpi
  */
-public class Carro {
+public class Carro extends Veiculo implements Terrestre{
+
+    @Override
+    public void anda(Posicao pos) {
+        System.out.println("Carro andando de " + this.pos.x + "," + this.pos.y + "para " + pos.x + "," + pos.y);
+        this.pos = pos;
+    }
     
 }

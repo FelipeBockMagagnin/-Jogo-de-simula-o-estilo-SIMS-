@@ -9,6 +9,12 @@ package jogo.de.simulação.estilo.sims;
  *
  * @author Felpi
  */
-public class Passaro {
+public class Passaro extends Animal implements Aereo{
+
+    @Override
+    public void voa(Posicao pos) {
+        System.out.println("Passaro voando de " + this.pos.x + "," + this.pos.y + ", para " + pos.x + "," + pos.y);
+        this.pos = pos;
+    }
     
 }
